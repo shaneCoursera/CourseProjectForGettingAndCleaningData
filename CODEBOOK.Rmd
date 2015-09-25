@@ -47,69 +47,69 @@
 |tBodyGyroJerk_std_Y                |  tBodyGyroJerk.std...Y       |  Time - body gyro jerk component - Y axis - standard deviation                |
 |tBodyGyroJerk_std_Z                |  tBodyGyroJerk.std...Z       |  Time - body gyro jerk component - Z axis - standard deviation                |
 | | | |
-|tBodyAccMag_mean                   |  tBodyAccMag.mean..          |  Time - body acceleration component - magnitude - mean                |
-|tBodyAccMag_std                    |  tBodyAccMag.std..           |  Time - body acceleration component - magnitude - standard deviation                |
-|tGravityAccMag_mean                |  tGravityAccMag.mean..       |  Time - gravity acceleration component - magnitude - mean                |
-|tGravityAccMag_std                 |  tGravityAccMag.std..        |  Time - gravity acceleration component - magnitude - standard deviation                |
+|tBodyAccMag_mean                   |  tBodyAccMag.mean..          |  Time - body acceleration magnitude - mean                |
+|tBodyAccMag_std                    |  tBodyAccMag.std..           |  Time - body acceleration magnitude - standard deviation                |
+|tGravityAccMag_mean                |  tGravityAccMag.mean..       |  Time - gravity acceleration magnitude - mean                |
+|tGravityAccMag_std                 |  tGravityAccMag.std..        |  Time - gravity acceleration magnitude - standard deviation                |
 | | | |
-|tBodyAccJerkMag_mean               |  tBodyAccJerkMag.mean..      |  Time - body jerk component - magnitude - mean                |
-|tBodyAccJerkMag_std                |  tBodyAccJerkMag.std..       |  Time - body jerk component - magnitude - standard deviation                |
-|tBodyGyroMag_mean                  |  tBodyGyroMag.mean..         |  Time - body gyro component - magnitude - mean                |
-|tBodyGyroMag_std                   |  tBodyGyroMag.std..          |  Time - body gyro component - magnitude - standard deviation                |
-|tBodyGyroJerkMag_mean              |  tBodyGyroJerkMag.mean..     |  Time - body gyro jerk component - axis - mean                |
-|tBodyGyroJerkMag_std               |  tBodyGyroJerkMag.std..      |  Time - body gyro jerk component - axis - standard deviation                |
+|tBodyAccJerkMag_mean               |  tBodyAccJerkMag.mean..      |  Time - body jerk magnitude - mean                |
+|tBodyAccJerkMag_std                |  tBodyAccJerkMag.std..       |  Time - body jerk magnitude - standard deviation                |
+|tBodyGyroMag_mean                  |  tBodyGyroMag.mean..         |  Time - body gyro magnitude - mean                |
+|tBodyGyroMag_std                   |  tBodyGyroMag.std..          |  Time - body gyro magnitude - standard deviation                |
+|tBodyGyroJerkMag_mean              |  tBodyGyroJerkMag.mean..     |  Time - body gyro jerk magnitude - mean                |
+|tBodyGyroJerkMag_std               |  tBodyGyroJerkMag.std..      |  Time - body gyro jerk magnitude - standard deviation                |
 | | | |
 |fBodyAcc_mean_X                    |  fBodyAcc.mean...X           |  Frequency - body acceleration component - X axis - mean                |
 |fBodyAcc_mean_Y                    |  fBodyAcc.mean...Y           |  Frequency - body acceleration component - Y axis - mean                |
-|fBodyAcc_mean_Z                    |  fBodyAcc.mean...Z           |   Frequency - body acceleration component - Z axis - mean                |
+|fBodyAcc_mean_Z                    |  fBodyAcc.mean...Z           |  Frequency - body acceleration component - Z axis - mean                |
 |fBodyAcc_std_X                     |  fBodyAcc.std...X            |  Frequency - body acceleration component - X axis - standard deviation  |
 |fBodyAcc_std_Y                     |  fBodyAcc.std...Y            |  Frequency - body acceleration component - Y axis - standard deviation  |
 |fBodyAcc_std_Z                     |  fBodyAcc.std...Z            |  Frequency - body acceleration component - Z axis - standard deviation  |
 | | | |
-|fBodyAcc_meanFreq_X                |  fBodyAcc.meanFreq...X       |  Frequency - body acceleration component - X axis - mean frequency               |
-|fBodyAcc_meanFreq_Y                |  fBodyAcc.meanFreq...Y       |  Frequency - body acceleration component - Y axis - mean frequency               |
-|fBodyAcc_meanFreq_Z                |  fBodyAcc.meanFreq...Z       |  Frequency - body acceleration component - Z axis - mean frequency               |
+|fBodyAcc_meanFreq_X                |  fBodyAcc.meanFreq...X       |  Frequency - body acceleration component - X axis - mean frequency      |
+|fBodyAcc_meanFreq_Y                |  fBodyAcc.meanFreq...Y       |  Frequency - body acceleration component - Y axis - mean frequency      |
+|fBodyAcc_meanFreq_Z                |  fBodyAcc.meanFreq...Z       |  Frequency - body acceleration component - Z axis - mean frequency      |
+| | | |
 |fBodyAccJerk_mean_X                |  fBodyAccJerk.mean...X       |  Frequency - body jerk component - X axis - mean                |
 |fBodyAccJerk_mean_Y                |  fBodyAccJerk.mean...Y       |  Frequency - body jerk component - Y axis - mean                |
 |fBodyAccJerk_mean_Z                |  fBodyAccJerk.mean...Z       |  Frequency - body jerk component - Z axis - mean                |
+|fBodyAccJerk_std_X                 |  fBodyAccJerk.std...X        |  Frequency - body jerk component - X axis - standard deviation          |
+|fBodyAccJerk_std_Y                 |  fBodyAccJerk.std...Y        |  Frequency - body jerk component - Y axis - standard deviation          |
+|fBodyAccJerk_std_Z                 |  fBodyAccJerk.std...Z        |  Frequency - body jerk component - Z axis - standard deviation          |
 | | | |
-|fBodyAccJerk_std_X                 |  fBodyAccJerk.std...X        |  Frequency - body jerk component - X axis - standard deviation                |
-|fBodyAccJerk_std_Y                 |  fBodyAccJerk.std...Y        |  Frequency - body jerk component - Y axis - standard deviation                |
-|fBodyAccJerk_std_Z                 |  fBodyAccJerk.std...Z        |  Frequency - body jerk component - Z axis - standard deviation                |
-| | | |
-|fBodyAccJerk_meanFreq_X            |  fBodyAccJerk.meanFreq...X   |  Frequency - body acceleration component - X axis - mean frequency               |
-|fBodyAccJerk_meanFreq_Y            |  fBodyAccJerk.meanFreq...Y   |  Frequency - body acceleration component - Y axis - mean frequency               |
-|fBodyAccJerk_meanFreq_Z            |  fBodyAccJerk.meanFreq...Z   |  Frequency - body acceleration component - Z axis - mean frequency               |
+|fBodyAccJerk_meanFreq_X            |  fBodyAccJerk.meanFreq...X   |  Frequency - body acceleration component - X axis - mean frequency      |
+|fBodyAccJerk_meanFreq_Y            |  fBodyAccJerk.meanFreq...Y   |  Frequency - body acceleration component - Y axis - mean frequency      |
+|fBodyAccJerk_meanFreq_Z            |  fBodyAccJerk.meanFreq...Z   |  Frequency - body acceleration component - Z axis - mean frequency      |
 | | | |
 |fBodyGyro_mean_X                   |  fBodyGyro.mean...X          |  Frequency - body gyro component - X axis - mean                |
 |fBodyGyro_mean_Y                   |  fBodyGyro.mean...Y          |  Frequency - body gyro component - Y axis - mean                |
 |fBodyGyro_mean_Z                   |  fBodyGyro.mean...Z          |  Frequency - body gyro component - Z axis - mean                |
-|fBodyGyro_std_X                    |  fBodyGyro.std...X           |  Frequency - body gyro component - X axis - standard deviation                |
-|fBodyGyro_std_Y                    |  fBodyGyro.std...Y           |  Frequency - body gyro component - Y axis - standard deviation                |
-|fBodyGyro_std_Z                    |  fBodyGyro.std...Z           |  Frequency - body gyro component - Z axis - standard deviation                |
-|fBodyGyro_meanFreq_X               |  fBodyGyro.meanFreq...X      |  Frequency - body gyro component - X axis - mean frequency               |
-|fBodyGyro_meanFreq_Y               |  fBodyGyro.meanFreq...Y      |  Frequency - body gyro component - Y axis - mean frequency               |
-|fBodyGyro_meanFreq_Z               |  fBodyGyro.meanFreq...Z      |  Frequency - body gyro component - Z axis - mean frequency               |
+|fBodyGyro_std_X                    |  fBodyGyro.std...X           |  Frequency - body gyro component - X axis - standard deviation  |
+|fBodyGyro_std_Y                    |  fBodyGyro.std...Y           |  Frequency - body gyro component - Y axis - standard deviation  |
+|fBodyGyro_std_Z                    |  fBodyGyro.std...Z           |  Frequency - body gyro component - Z axis - standard deviation  |
+|fBodyGyro_meanFreq_X               |  fBodyGyro.meanFreq...X      |  Frequency - body gyro component - X axis - mean frequency      |
+|fBodyGyro_meanFreq_Y               |  fBodyGyro.meanFreq...Y      |  Frequency - body gyro component - Y axis - mean frequency      |
+|fBodyGyro_meanFreq_Z               |  fBodyGyro.meanFreq...Z      |  Frequency - body gyro component - Z axis - mean frequency      |
 | | | |
 |fBodyAccMag_mean                   |  fBodyAccMag.mean..              |  Frequency - body acceleration magnitude - mean                |
-|fBodyAccMag_std                    |  fBodyAccMag.std..               |  Frequency - body acceleration magnitude - standard deviation                |
+|fBodyAccMag_std                    |  fBodyAccMag.std..               |  Frequency - body acceleration magnitude - standard deviation  |
 |fBodyAccMag_meanFreq               |  fBodyAccMag.meanFreq..          |  Frequency - body acceleration magnitude - mean frequency               |
 |fBodyBodyAccJerkMag_mean           |  fBodyBodyAccJerkMag.mean..      |  Frequency - body acceleration jerk magnitude - mean                |
 |fBodyBodyAccJerkMag_std            |  fBodyBodyAccJerkMag.std..       |  Frequency - body acceleration jerk magnitude - standard deviation                |
 |fBodyBodyAccJerkMag_meanFreq       |  fBodyBodyAccJerkMag.meanFreq..  |  Frequency - body acceleration jrek magnitude - mean frequency               |
-|fBodyBodyGyroMag_mean              |  fBodyBodyGyroMag.mean..         |  Frequency - body acceleration gyro magnitude - - mean                |
-|fBodyBodyGyroMag_std               |  fBodyBodyGyroMag.std..          |  Frequency - body acceleration gyro magnitude - standard deviation                |
-|fBodyBodyGyroMag_meanFreq          |  fBodyBodyGyroMag.meanFreq..     |  Frequency - body acceleration magnitude - mean frequency               |
-|fBodyBodyGyroJerkMag_mean          |  fBodyBodyGyroJerkMag.mean..     |  Frequency - body acceleration magnitude - mean            |
-|fBodyBodyGyroJerkMag_std      |  fBodyBodyGyroJerkMag.std..           |  Frequency - body acceleration magnitude - standard deviation             |
-|fBodyBodyGyroJerkMag_meanFreq |  fBodyBodyGyroJerkMag.meanFreq..      |  Frequency - body acceleration magnitude - mean frequency               |
+|fBodyBodyGyroMag_mean              |  fBodyBodyGyroMag.mean..         |  Frequency - body gyro magnitude - mean                |
+|fBodyBodyGyroMag_std               |  fBodyBodyGyroMag.std..          |  Frequency - body gyro magnitude - standard deviation                |
+|fBodyBodyGyroMag_meanFreq          |  fBodyBodyGyroMag.meanFreq..     |  Frequency - body gyro magnitude - mean frequency               |
+|fBodyBodyGyroJerkMag_mean          |  fBodyBodyGyroJerkMag.mean..     |  Frequency - body gyro jerk magnitude - mean            |
+|fBodyBodyGyroJerkMag_std      |  fBodyBodyGyroJerkMag.std..           |  Frequency - body gyro jerk magnitude - standard deviation             |
+|fBodyBodyGyroJerkMag_meanFreq |  fBodyBodyGyroJerkMag.meanFreq..      |  Frequency - body gyro jerk magnitude - mean frequency               |
 | | | |
-|angle_tBodyAccMean_gravity         |  angle.tBodyAccMean.gravity.         | Frequency - body acceleration component - axis - mean                |
-|angle_tBodyAccJerkMean_gravityMean |  angle.tBodyAccJerkMean..gravityMean.| Frequency - body acceleration component - axis - mean                |
-|angle_tBodyGyroMean_gravityMean    |  angle.tBodyGyroMean.gravityMean.    | Frequency - body acceleration component - axis - mean                |
-|angle_tBodyGyroJerkMean_gravityMean|  angle.tBodyGyroJerkMean.gravityMean.| Frequency - body acceleration component - axis - mean                |
-|angle_X_gravityMean                |  angle.X.gravityMean.                | Frequency - body acceleration component - X axis - mean                |
-|angle_Y_gravityMean                |  angle.Y.gravityMean.                | Frequency - body acceleration component - Y axis - mean                |
-|angle_Z_gravityMean                |  angle.Z.gravityMean.                | Frequency - body acceleration component - Z axis - mean                |
+|angle_tBodyAccMean_gravity         |  angle.tBodyAccMean.gravity.         | Angle of Time Body Acceleration - Mean - Gravity |
+|angle_tBodyAccJerkMean_gravityMean |  angle.tBodyAccJerkMean..gravityMean.| Angle of Time Body Acceleration Jerk - Mean - Gravity |
+|angle_tBodyGyroMean_gravityMean    |  angle.tBodyGyroMean.gravityMean.    | Angle of Time Body Gyro - Mean - Gravity |
+|angle_tBodyGyroJerkMean_gravityMean|  angle.tBodyGyroJerkMean.gravityMean.| Angle of Time Body Gyro Jerk - Mean - Gravity |
+|angle_X_gravityMean                |  angle.X.gravityMean.                | Angle of gravityMean - X axis |
+|angle_Y_gravityMean                |  angle.Y.gravityMean.                | Angle of gravityMean - Y axis |
+|angle_Z_gravityMean                |  angle.Z.gravityMean.                | Angle of gravityMean - Z axis |
 | | | |
 
