@@ -22,7 +22,7 @@ buildDataset <- function(subjectFile, activityFile, featureFile) {
 
 The buildDataset function has the following blocks:
 
-### Step 1.1.1 : Build subjectFrame
+#### Step 1.1.1 : Build subjectFrame
 This code fragment reads the contents of the text file containing the subject identifiers (1-30)
 for the current dataset and creates a dataFrame named 'subjectFrame' with one column named 'Subject'.
 
@@ -32,7 +32,7 @@ for the current dataset and creates a dataFrame named 'subjectFrame' with one co
     subjectFrame <- mutate(subjectFrame, Subject = as.factor(Subject))
 ```
 
-### Step 1.1.2 : Build activityFrame
+#### Step 1.1.2 : Build activityFrame
 This code fragment reads the contents of the text file containing the activity identifiers (1-6)
 for the current dataset and creates a dataFrame named 'activityFrame' with one column named 'Activity'.
 Each row in activityFrame contains the activity performed by the subject in the corresponding row in the 
@@ -51,7 +51,7 @@ The numeric codes are converted into the corresponding label and stored back int
     activityFrame <- mutate(activityFrame, Activity = as.factor(activityNames[Activity]))
 ```
 
-### Step 1.1.3 : Build featureFrame
+#### Step 1.1.3 : Build featureFrame
 This code fragment reads the contents of the text file containing the observations 
 for the current dataset and creates a dataFrame named 'featureFrame' with one column for
 each of the 561 features. Each row in featureFrame contains the features observed or calculated
@@ -77,7 +77,7 @@ df <- data.frame(subjectFrame, activityFrame, featureFrame)
 ```
 The number of columns in the 'df' dataFrame will be 563 (subject, activity and the 561 features) 
 
-Step 1.2 : Call 'buildDataSet' function from 'myrunx' function
+### Step 1.2 : Call 'buildDataSet' function from 'myrunx' function
 
 myrunx is the main function. It makes two calls to buildDataset
 function with the appropriate filenames for the 'test' and 'train' sets.
