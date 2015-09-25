@@ -1,3 +1,7 @@
+
+
+|Column Name | Original Name in File | Description |
+| -----------| ----------------------| ------------|
 |Subject  | - | A number from 1-30 that indicates the subject who was observed             |
 | | | |
 |Activity | - | Activity performed by the subject when observation was recorded            |
