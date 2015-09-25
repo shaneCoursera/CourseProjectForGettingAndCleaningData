@@ -1,0 +1,183 @@
+|Subject  | - | A number from 1-30 that indicates the subject who was observed             |
+| | | |
+|Activity | - | Activity performed by the subject when observation was recorded            |
+|         |   |   WALKING                      |
+|         |   |            WALKING_UPSTAIRS    |
+|         |   |            WALKING_DOWNSTAIRS  |
+|         |   |            SITTING   |
+|         |   |            STANDING |
+|         |   |            LAYING    |
+|         |   |                       |
+|tbodyacc_mean_x                    |  [3] "tBodyAcc.mean...X"           | Time domain signal - body acceleration component - X axis - mean |
+| | | |
+|tBodyAcc_mean_Y                    |  [4] "tBodyAcc.mean...Y"           | Time domain signal - body acceleration component - Y axis - mean |
+| | | |
+|tBodyAcc_mean_Z                    |  [5] "tBodyAcc.mean...Z"           | Time domain signal - body acceleration component - Z axis - mean |
+| | | |
+|tBodyAcc_std_X                     |  [6] "tBodyAcc.std...X"            | Time domain signal - body acceleration component - X axis - standard deviation|
+| | | |
+|tBodyAcc_std_Y                     |  [7] "tBodyAcc.std...Y"            | Time domain signal - body acceleration component - Y axis - standard deviation|
+| | | |
+|tBodyAcc_std_Z                     |  [8] "tBodyAcc.std...Z"            | Time domain signal - body acceleration component - Z axis - standard deviation|
+| | | |
+|tGravityAcc_mean_X                 |  [9] "tGravityAcc.mean...X"        | Time domain signal - gravity acceleration component - X axis - mean|
+| | | |
+|tGravityAcc_mean_Y                 | [10] "tGravityAcc.mean...Y"        | Time domain signal - gravity acceleration component - Y axis - mean|
+| | | |
+|tGravityAcc_mean_Z                 | [11] "tGravityAcc.mean...Z"        | Time domain signal - gravity acceleration component - Z axis - mean|
+| | | |
+|tGravityAcc_std_X                  | [12] "tGravityAcc.std...X"         | Time domain signal - gravity acceleration component - X axis - standard deviation|
+| | | |
+|tGravityAcc_std_Y                  | [13] "tGravityAcc.std...Y"         | Time domain signal - gravity acceleration component - Y axis - standard deviation|
+| | | |
+|tGravityAcc_std_Z                  | [14] "tGravityAcc.std...Z"         | Time domain signal - gravity acceleration component - Z axis - standard deviation|
+| | | |
+|tBodyAccJerk_mean_X                | [15] "tBodyAccJerk.mean...X"       |  Time domain signal - body jerk component - X axis - mean                |
+| | | |
+|tBodyAccJerk_mean_Y                | [16] "tBodyAccJerk.mean...Y"       |  Time domain signal - body jerk component - Y axis - mean                |
+| | | |
+|tBodyAccJerk_mean_Z                | [17] "tBodyAccJerk.mean...Z"       |  Time domain signal - body jerk component - Z axis - mean                |
+| | | |
+|tBodyAccJerk_std_X                 | [18] "tBodyAccJerk.std...X"        |  Time domain signal - body jerk component - X axis - standard deviation                |
+| | | |
+|tBodyAccJerk_std_Y                 | [19] "tBodyAccJerk.std...Y"        |  Time domain signal - body jerk component - Y axis - standard deviation                |
+| | | |
+|tBodyAccJerk_std_Z                 | [20] "tBodyAccJerk.std...Z"        |  Time domain signal - body jerk component - Z axis - standard deviation                |
+| | | |
+|tBodyGyro_mean_X                   | [21] "tBodyGyro.mean...X"          |  Time domain signal - body gyro component - X axis - mean                |
+| | | |
+|tBodyGyro_mean_Y                   | [22] "tBodyGyro.mean...Y"          |  Time domain signal - body gyro component - Y axis - mean                |
+| | | |
+|tBodyGyro_mean_Z                   | [23] "tBodyGyro.mean...Z"          |  Time domain signal - body gyro component - Z axis - mean                |
+| | | |
+|tBodyGyro_std_X                    | [24] "tBodyGyro.std...X"           |  Time domain signal - body gyro component - X axis - standard deviation                |
+| | | |
+|tBodyGyro_std_Y                    | [25] "tBodyGyro.std...Y"           |  Time domain signal - body gyro component - Y axis - standard deviation                |
+| | | |
+|tBodyGyro_std_Z                    | [26] "tBodyGyro.std...Z"           |  Time domain signal - body gyro component - Z axis - standard deviation                |
+| | | |
+|tBodyGyroJerk_mean_X               | [27] "tBodyGyroJerk.mean...X"      |  Time domain signal - body gyro jerk component - X axis - mean                |
+| | | |
+|tBodyGyroJerk_mean_Y               | [28] "tBodyGyroJerk.mean...Y"      |  Time domain signal - body gyro jerk component - Y axis - mean                |
+| | | |
+|tBodyGyroJerk_mean_Z               | [29] "tBodyGyroJerk.mean...Z"      |  Time domain signal - body gyro jerk component - Z axis - mean                |
+| | | |
+|tBodyGyroJerk_std_X                | [30] "tBodyGyroJerk.std...X"       |  Time domain signal - body gyro jerk component - X axis - standard deviation                |
+| | | |
+|tBodyGyroJerk_std_Y                | [31] "tBodyGyroJerk.std...Y"       |  Time domain signal - body gyro jerk component - Y axis - standard deviation                |
+| | | |
+|tBodyGyroJerk_std_Z                | [32] "tBodyGyroJerk.std...Z"       |  Time domain signal - body gyro jerk component - Z axis - standard deviation                |
+| | | |
+|tBodyAccMag_mean                   | [33] "tBodyAccMag.mean.."          |  Time domain signal - body acceleration component - magnitude - mean                |
+| | | |
+|tBodyAccMag_std                    | [34] "tBodyAccMag.std.."           |  Time domain signal - body acceleration component - magnitude - standard deviation                |
+| | | |
+|tGravityAccMag_mean                | [35] "tGravityAccMag.mean.."       |  Time domain signal - gravity acceleration component - magnitude - mean                |
+| | | |
+|tGravityAccMag_std                 | [36] "tGravityAccMag.std.."       |  Time domain signal - gravity acceleration component - magnitude - standard deviation                |
+| | | |
+|tBodyAccJerkMag_mean               | [37] "tBodyAccJerkMag.mean.."      |  Time domain signal - body jerk component - magnitude - mean                |
+| | | |
+|tBodyAccJerkMag_std                | [38] "tBodyAccJerkMag.std.."       |  Time domain signal - body jerk component - magnitude - standard deviation                |
+| | | |
+|tBodyGyroMag_mean                  | [39] "tBodyGyroMag.mean.."         |  Time domain signal - body gyro component - magnitude - mean                |
+| | | |
+|tBodyGyroMag_std                   | [40] "tBodyGyroMag.std.."          |  Time domain signal - body gyro component - magnitude - standard deviation                |
+| | | |
+|tBodyGyroJerkMag_mean              | [41] "tBodyGyroJerkMag.mean.."     |  Time domain signal - body gyro jerk component - axis - mean                |
+| | | |
+|tBodyGyroJerkMag_std               | [42] "tBodyGyroJerkMag.std.."      |  Time domain signal - body gyro jerk component - axis - standard deviation                |
+| | | |
+|fBodyAcc_mean_X                    | [43] "fBodyAcc.mean...X"           |  Frequency domain signal - body acceleration component - X axis - mean                |
+| | | |
+|fBodyAcc_mean_Y                    | [44] "fBodyAcc.mean...Y"           |  Frequency domain signal - body acceleration component - Y axis - mean                |
+| | | |
+|fBodyAcc_mean_Z                   | [45] "fBodyAcc.mean...Z"           |   Frequency domain signal - body acceleration component - Z axis - mean                |
+| | | |
+|fBodyAcc_std_X                     | [46] "fBodyAcc.std...X"            |  Frequency domain signal - body acceleration component - X axis - standard deviation  |
+| | | |
+|fBodyAcc_std_Y                     | [47] "fBodyAcc.std...Y"            |  Frequency domain signal - body acceleration component - Y axis - standard deviation  |
+| | | |
+|fBodyAcc_std_Z                     | [48] "fBodyAcc.std...Z"            |  Frequency domain signal - body acceleration component - Z axis - standard deviation  |
+| | | |
+|fBodyAcc_meanFreq_X                | [49] "fBodyAcc.meanFreq...X"       |  Frequency domain signal - body acceleration component - X axis - mean frequency               |
+| | | |
+|fBodyAcc_meanFreq_Y                | [50] "fBodyAcc.meanFreq...Y"       |  Frequency domain signal - body acceleration component - Y axis - mean frequency               |
+| | | |
+|fBodyAcc_meanFreq_Z                | [51] "fBodyAcc.meanFreq...Z"       |  Frequency domain signal - body acceleration component - Z axis - mean frequency               |
+| | | |
+|fBodyAccJerk_mean_X                | [52] "fBodyAccJerk.mean...X"       |  Frequency domain signal - body jerk component - X axis - mean                |
+| | | |
+|fBodyAccJerk_mean_Y                | [53] "fBodyAccJerk.mean...Y"       |  Frequency domain signal - body jerk component - Y axis - mean                |
+| | | |
+|fBodyAccJerk_mean_Z                | [54] "fBodyAccJerk.mean...Z"       |  Frequency domain signal - body jerk component - Z axis - mean                |
+| | | |
+|fBodyAccJerk_std_X                 | [55] "fBodyAccJerk.std...X"       |  Frequency domain signal - body jerk component - X axis - standard deviation                |
+| | | |
+|fBodyAccJerk_std_Y                 | [56] "fBodyAccJerk.std...Y"       |  Frequency domain signal - body jerk component - Y axis - standard deviation                |
+| | | |
+|fBodyAccJerk_std_Z                 | [57] "fBodyAccJerk.std...Z"       |  Frequency domain signal - body jerk component - Z axis - standard deviation                |
+| | | |
+|fBodyAccJerk_meanFreq_X            | [58] "fBodyAccJerk.meanFreq...X"   |  Frequency domain signal - body acceleration component - X axis - mean frequency               |
+| | | |
+|fBodyAccJerk_meanFreq_Y            | [59] "fBodyAccJerk.meanFreq...Y"   |  Frequency domain signal - body acceleration component - Y axis - mean frequency               |
+| | | |
+|fBodyAccJerk_meanFreq_Z            | [60] "fBodyAccJerk.meanFreq...Z"   |  Frequency domain signal - body acceleration component - Z axis - mean frequency               |
+| | | |
+|fBodyGyro_mean_X                   | [61] "fBodyGyro.mean...X"          |  Frequency domain signal - body gyro component - X axis - mean                |
+| | | |
+|fBodyGyro_mean_Y                   | [62] "fBodyGyro.mean...Y"          |  Frequency domain signal - body gyro component - Y axis - mean                |
+| | | |
+|fBodyGyro_mean_Z                   | [63] "fBodyGyro.mean...Z"          |  Frequency domain signal - body gyro component - Z axis - mean                |
+| | | |
+|fBodyGyro_std_X                    | [64] "fBodyGyro.std...X"          |  Frequency domain signal - body gyro component - X axis - standard deviation                |
+| | | |
+|fBodyGyro_std_Y                    | [65] "fBodyGyro.std...Y"          |  Frequency domain signal - body gyro component - Y axis - standard deviation                |
+| | | |
+|fBodyGyro_std_Z                    | [66] "fBodyGyro.std...Z"          |  Frequency domain signal - body gyro component - Z axis - standard deviation                |
+| | | |
+|fBodyGyro_meanFreq_X               | [67] "fBodyGyro.meanFreq...X"      |  Frequency domain signal - body gyro component - X axis - mean frequency               |
+| | | |
+|fBodyGyro_meanFreq_Y               | [68] "fBodyGyro.meanFreq...Y"      |  Frequency domain signal - body gyro component - Y axis - mean frequency               |
+| | | |
+|fBodyGyro_meanFreq_Z               | [69] "fBodyGyro.meanFreq...Z"      |  Frequency domain signal - body gyro component - Z axis - mean frequency               |
+| | | |
+|fBodyAccMag_mean                   | [70] "fBodyAccMag.mean.."          |  Frequency domain signal - body acceleration magnitude - mean                |
+| | | |
+|fBodyAccMag_std                    | [71] "fBodyAccMag.std.."           |  Frequency domain signal - body acceleration magnitude - standard deviation                |
+| | | |
+|fBodyAccMag_meanFreq               | [72] "fBodyAccMag.meanFreq.."      |  Frequency domain signal - body acceleration magnitude - mean frequency               |
+| | | |
+|fBodyBodyAccJerkMag_mean           | [73] "fBodyBodyAccJerkMag.mean.."  |  Frequency domain signal - body acceleration jerk magnitude - mean                |
+| | | |
+|fBodyBodyAccJerkMag_std            | [74] "fBodyBodyAccJerkMag.std.."   |  Frequency domain signal - body acceleration jerk magnitude - standard deviation                |
+| | | |
+|fBodyBodyAccJerkMag_meanFreq       | [75] "fBodyBodyAccJerkMag.meanFreq.."|   Frequency domain signal - body acceleration jrek magnitude - mean frequency               |
+| | | |
+|fBodyBodyGyroMag_mean              | [76] "fBodyBodyGyroMag.mean.."     |  Frequency domain signal - body acceleration gyro magnitude - - mean                |
+| | | |
+|fBodyBodyGyroMag_std               | [77] "fBodyBodyGyroMag.std.."  |  Frequency domain signal - body acceleration gyro magnitude - standard deviation                |
+| | | |
+|fBodyBodyGyroMag_meanFreq        | [78] "fBodyBodyGyroMag.meanFreq.." |Frequency domain signal - body acceleration magnitude - mean frequency               |
+| | | |
+|fBodyBodyGyroJerkMag_mean          | [79] "fBodyBodyGyroJerkMag.mean.." |  Frequency domain signal - body acceleration magnitude - mean            |
+| | | |
+|fBodyBodyGyroJerkMag_std      | [80] "fBodyBodyGyroJerkMag.std.."  |  Frequency domain signal - body acceleration magnitude - standard deviation             |
+| | | |
+|fBodyBodyGyroJerkMag_meanFreq | [81] "fBodyBodyGyroJerkMag.meanFreq.." | Frequency domain signal - body acceleration magnitude - mean frequency               |
+| | | |
+|angle_tBodyAccMean_gravity         | [82] "angle.tBodyAccMean.gravity." |  Frequency domain signal - body acceleration component - axis - mean                |
+| | | |
+|angle_tBodyAccJerkMean_gravityMean | [83] "angle.tBodyAccJerkMean..gravityMean."|Frequency domain signal - body acceleration component - axis - mean                |
+| | | |
+|angle_tBodyGyroMean_gravityMean    | [84] "angle.tBodyGyroMean.gravityMean."    |Frequency domain signal - body acceleration component - axis - mean                |
+| | | |
+|angle_tBodyGyroJerkMean_gravityMean| [85] "angle.tBodyGyroJerkMean.gravityMean."|Frequency domain signal - body acceleration component - axis - mean                |
+| | | |
+|angle_X_gravityMean                | [86] "angle.X.gravityMean."        |  Frequency domain signal - body acceleration component - X axis - mean                |
+| | | |
+|angle_Y_gravityMean                | [87] "angle.Y.gravityMean."        |  Frequency domain signal - body acceleration component - Y axis - mean                |
+| | | |
+|angle_Z_gravityMean| [88] "angle.Z.gravityMean."|            Frequency domain signal - body acceleration component - Z axis - mean                |
+| | | |
+
