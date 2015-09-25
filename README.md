@@ -4,7 +4,7 @@ This document describes the script and codebook developed for the course project
 for the Coursera - Getting and Cleaning Data course.
 
 The main script is named 'run_analysis.R'. It can be run as long as the
-Samsung data described in the course project is present in your working directory.
+Samsung data files described in the course project is present in your working directory.
 
 ## Step 1 : Merge the training and test sets to create one data set
 
@@ -93,15 +93,31 @@ So the rbind (row-bind) command was used to join the two datasets into one.
 
 ## Step 2 : Extract only the measurements on the mean and standard deviation for each measurement. 
 
-The variable names from 'features.txt' were updated to convert '.' (dot) characters to '_' (underscore) characters.
+The select function from dplyr package is used to retain only the columns
+whose names contain either 'mean' or 'std'.
+
+```{r}
+df1 <- select(df1, Subject, Activity, matches("(.*)(mean|std)(.*)"))
+```
+
+## Step 3 : Use descriptive activity names to name the activities in the data set
+This was already done in Step 1.1.2 above in the 'buildDataset' function
+
+## Step 4: Appropriately labels the data set with descriptive variable names
+
+The original variable names were read in from the 'features.txt' file in step 1.1.3.
+The names were updated to convert '.' (dot) characters to '_' (underscore) characters.
 Consecutive occurrences like '..' and '...' were converted to a single underscore character. The '.' characters at
-the end of variable names were removed altogether. According to the week 4 lecture of the course on "Editing Text Variables (10-46)", underscores improve readablity. And the case of the variable names was changed to lower case.
+the end of variable names were removed altogether. According to the week 4 lecture of the course on "Editing Text Variables (10-46)", underscores improve readablity. Also, the case of the variable names was changed to lower case.
 
+Some of the variables are listed below in the table:
 
-|[67] "fBodyGyro.meanFreq...X"  | fBodyGyro_meanFreq_X |            
-|[70] "fBodyAccMag.mean.."      | fBodyAccMag_mean     |                 
-|[71] "fBodyAccMag.std.."       | fBodyAccMag_std      |            
-|[72] "fBodyAccMag.meanFreq.."  | fBodyAccMag_meanFreq |            
-|[86] "angle.X.gravityMean."    | angle_X_gravityMean  |
+|Original name in data files    | New name in data.frame|
+|-------------------------------|----------------------|
+|fBodyGyro.meanFreq...X  | fbodygyro_meanfreq_x |            
+|fBodyAccMag.mean..      | fbodyaccmag_mean     |                 
+|fBodyAccMag.std..       | fbodyaccmag_std      |            
+|fBodyAccMag.meanFreq..  | fbodyaccmag_meanfreq |            
+|angle.X.gravityMean.    | angle_x_gravitymean  |
 
 
