@@ -27,7 +27,7 @@ This code fragment reads the contents of the text file containing the subject id
 for the current dataset and creates a dataFrame named 'subjectFrame' with one column named 'Subject'.
 
 ```{r}
-    subjectFrame <- read.table(subjFile, header=FALSE)
+    subjectFrame <- read.table(subjectFile, header=FALSE)
     names(subjectFrame) <- c("Subject")
     subjectFrame <- mutate(subjectFrame, Subject = as.factor(Subject))
 ```
@@ -72,12 +72,10 @@ Since the data in the three textfiles is already in the correct order( ie the ac
 the features for a subject in the subjectFile was in the same row in the activityFile and
 featureFile), we can just use the data.frame command to combine the three frames into one.
 
-### Step 1.1.4 : Build data.frame
-
 ```{r}
 df <- data.frame(subjectFrame, activityFrame, featureFrame)
 ```
-The number of columns in the 'df' dataFrame will be 561. 
+The number of columns in the 'df' dataFrame will be 563 (subject, activity and the 561 features) 
 
 Step 1.2 : Call 'buildDataSet' function from 'myrunx' function
 
@@ -97,7 +95,7 @@ The select function from dplyr package is used to retain only the columns
 whose names contain either 'mean' or 'std'.
 
 ```{r}
-df1 <- select(df1, Subject, Activity, matches("(.*)(mean|std)(.*)"))
+df1 <- select(df1, Subject, Activity, matches("mean|std"))
 ```
 
 ## Step 3 : Use descriptive activity names to name the activities in the data set
@@ -119,5 +117,39 @@ Some of the variables are listed below in the table:
 |fBodyAccMag.std..       | fbodyaccmag_std      |            
 |fBodyAccMag.meanFreq..  | fbodyaccmag_meanfreq |            
 |angle.X.gravityMean.    | angle_x_gravitymean  |
+
+## Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+The following two lines of code create a new dataFrame df2 that groups all the observations in df1
+by 'subject' and 'activity' and calculates the mean of each of the features
+
+```{r}
+    df2 <- group_by(df1, subject, activity)
+    
+    df2 <- summarize_each(df2, funs(mean))
+```
+
+And finally, the following line writes the tidy dataset as a text file.
+
+```{r}
+write.table(df2, file="tidy_data_set.txt", row.names=FALSE)
+```
+
+## Tidy Data Set
+
+The data set that is created by the script has one row for each combination of subject and activity,
+giving 180 (ie 30 * 6) rows. There aren't any missing values. Values are not used as variable names.
+
+Each of the feature averages is in its own column. Data which spread across different files in the original 
+directory have been converted to this data making it amenable for further analysis.
+
+For this reason, this dataset can be considered as a *tidy data set*
+
+
+
+
+
+
+
 
 
