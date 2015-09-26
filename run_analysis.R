@@ -17,6 +17,8 @@
 ###########################################################################
 run_analysis <- function() {
     
+    library(dplyr)
+    
     #read the files pertaining to 'training'    
     dfTrain <- buildDataset("train/subject_train.txt", "train/y_train.txt", "train/X_train.txt")
     
