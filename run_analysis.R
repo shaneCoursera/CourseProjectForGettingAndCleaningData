@@ -3,19 +3,19 @@
 # This script was created for the course project for
 # 'Coursera - Getting and Cleaning Data' course
 #
-# The main function is 'myrunx'. To run the script 
+# The main function is 'run_analysis'. To run the script 
 # just type the following on the command-line:
-#      myrunx()
+#      run_analysis()
 # 
 # Running the above command will generate a text file named 'tidy_data_set.txt'
 # if all the initial data files specified in the course in the current working 
 # directory
 # 
-# The myrunx function internally uses another function 'buildDataset'
+# The run_analysis function internally uses another function 'buildDataset'
 # which is defined further below
 #
 ###########################################################################
-myrunx <- function() {
+run_analysis <- function() {
     
     #read the files pertaining to 'training'    
     dfTrain <- buildDataset("train/subject_train.txt", "train/y_train.txt", "train/X_train.txt")

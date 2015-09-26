@@ -77,9 +77,9 @@ df <- data.frame(subjectFrame, activityFrame, featureFrame)
 ```
 The number of columns in the 'df' dataFrame will be 563 (subject, activity and the 561 features) 
 
-### Step 1.2 : Call 'buildDataSet' function from 'myrunx' function
+### Step 1.2 : Call 'buildDataSet' function from 'run_analysis' function
 
-myrunx is the main function. It makes two calls to buildDataset
+run_analysis is the main function. It makes two calls to buildDataset
 function with the appropriate filenames for the 'test' and 'train' sets.
 
 Both datasets have the same number of columns, but different number of rows.
@@ -105,8 +105,12 @@ This was already done in Step 1.1.2 above in the 'buildDataset' function
 
 The original variable names were read in from the 'features.txt' file in step 1.1.3.
 The names were updated to convert '.' (dot) characters to '_' (underscore) characters.
-Consecutive occurrences like '..' and '...' were converted to a single underscore character. The '.' characters at
-the end of variable names were removed altogether. According to the week 4 lecture of the course on "Editing Text Variables (10-46)", underscores improve readablity. Also, the case of the variable names was changed to lower case.
+Consecutive occurrences like '..' and '...' were converted to a single underscore character. 
+The '.' characters atthe end of variable names were removed altogether. 
+Also, the case of the variable names was changed to lower case.
+
+According to the week 4 lecture of the course on "Editing Text Variables", variable names
+that are in lowercase and that have underscores instead of other symbols are more readable. 
 
 Some of the variables are listed below in the table:
 
